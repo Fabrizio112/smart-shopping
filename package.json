@@ -12,6 +12,7 @@
     "test": "jest",
     "coverage": "jest --coverage"
   },
+  "homepage": "./",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",

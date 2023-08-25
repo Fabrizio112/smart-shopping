@@ -55,7 +55,7 @@ const SmartProvider = ({ children }) => {
     })
 
     useEffect(() => {
-        if (cart.length > 0) {
+        if (cart && cart.length > 0) {
             function calculateDifferentStuff(cart) {
                 let quantityFinal = 0
                 let finalPrice = 0
@@ -94,7 +94,7 @@ const SmartProvider = ({ children }) => {
     }
     useEffect(() => {
         let dataFavorite = JSON.parse(window.localStorage.getItem("favorite"))
-        if (dataFavorite.length > 0) {
+        if (dataFavorite && dataFavorite.length > 0) {
             setFavorite(dataFavorite)
         }
     }, [])

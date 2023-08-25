@@ -39,7 +39,7 @@ function NavBar() {
                         <NavLink to="/favorite"><FontAwesomeIcon className="icon" size="2x" icon={faStar} /></NavLink>
                         <NavLink to="/cart">
                             <div className="container-icon-cart">
-                                <span>{cart.length}</span>
+                                <span>{cart && cart.length}</span>
                                 <FontAwesomeIcon className="icon" size="2x" icon={faCartShopping} />
                             </div>
                         </NavLink>

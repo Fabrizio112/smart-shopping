@@ -9,7 +9,7 @@ function CartSection() {
             <h1>Products</h1>
             <div className="cart-container-products">
                 {cart && cart.map(product => <CartCard product={product} />)}
-                {cart.length > 0 && <button className="clean-cart" onClick={cleanCart}>Clean Cart</button>}
+                {(cart && cart.length) > 0 && <button className="clean-cart" onClick={cleanCart}>Clean Cart</button>}
             </div>
         </div>
         <div className="cart-resume">
