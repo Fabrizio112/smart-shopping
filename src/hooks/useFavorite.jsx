@@ -8,11 +8,13 @@ export const useFavorite = (product) => {
     }
     useEffect(() => {
         let dataFavorite = JSON.parse(window.localStorage.getItem("favorite"))
-        dataFavorite.forEach(fav => {
-            if (fav.id === star.product.id) {
-                setStar({ star: true, product: product })
-            }
-        })
+        if (dataFavorite) {
+            dataFavorite.forEach(fav => {
+                if (fav.id === star.product.id) {
+                    setStar({ star: true, product: product })
+                }
+            })
+        }
     }, [])
     return { star, changeStarState }
 }
