@@ -758,6 +758,9 @@ footer .bottom-footer {
   .product-section .product-section_container .product-section_products {
     width: 100%;
   }
+  .modal-add_product p {
+    width: 70%;
+  }
 }
 @media (max-width: 480px) {
   .product-random .container-product-random img {
