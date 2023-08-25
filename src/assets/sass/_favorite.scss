@@ -1,0 +1,36 @@
+.favorite {
+    margin: 2rem 0;
+    width: 100%;
+    min-height: 80vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $padding-general;
+
+    .favorite-products {
+        border: 1px solid #00000038;
+        border-radius: 15px;
+        max-width: 1500px;
+        width: 1500px;
+        height: 100%;
+
+        h1 {
+            padding: 1rem;
+        }
+
+        .favorite-products-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+            border: 1px solid #00000038;
+
+            section {
+                padding: 1rem;
+            }
+        }
+    }
+
+
+}

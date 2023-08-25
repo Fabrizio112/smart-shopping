@@ -1,0 +1,17 @@
+.top_products {
+    width: 100%;
+    min-height: 80vh;
+    margin: 2rem 0;
+    padding: $padding-general;
+
+    .top-title {
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    .container-top_products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 1rem;
+    }
+}

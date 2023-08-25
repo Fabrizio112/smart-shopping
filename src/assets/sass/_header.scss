@@ -1,0 +1,28 @@
+header {
+    width: 100%;
+    min-height: 80vh;
+    background-color: #c5d6cb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: $padding-general;
+
+    .header-text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+
+        h1 {
+            font-size: 4rem;
+        }
+    }
+
+    .header-img {
+        background-image: url("../img/playstation.png");
+        width: 500px;
+        height: 300px;
+        background-position: center;
+    }
+}
