@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import imagen from "../../assets/img/smart-shopping.png"
+import imagen from "../../assets/img/smart-shopping.png";
 import { faInstagram, faLinkedin, faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
 function Footer() {
     return (<footer>

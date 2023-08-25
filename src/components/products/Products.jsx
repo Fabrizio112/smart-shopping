@@ -18,7 +18,7 @@ function Product() {
                 <ul>
                     <h2>Categories</h2>
                     <div>
-                        {CATEGORIES.map((category, index) => <li><NavLink key={index} onClick={changeCategory}>{category}</NavLink></li>)}
+                        {CATEGORIES.map((category, index) => <li key={index}><NavLink key={index} onClick={changeCategory}>{category}</NavLink></li>)}
                     </div>
 
                 </ul>

@@ -18,8 +18,8 @@ function NavBar() {
         resetFilterCategory()
         closeMenu()
     }
-    const handleCategory = () => {
-        changeCategory()
+    const handleCategory = (e) => {
+        changeCategory(e)
         closeMenu()
     }
     return (
@@ -27,7 +27,7 @@ function NavBar() {
             <section className="nav-top">
                 <div className="nav-top-img">
                     <NavLink to="/"><img src={imagenIcono} alt="smart-shopping" /></NavLink>
-                    <FontAwesomeIcon onClick={handleMenu} className="icon-menu" size="2x" icon={faBars} />
+                    <FontAwesomeIcon onClick={handleMenu} className="icon-menu icon" size="2x" icon={faBars} />
                 </div>
                 <div className="nav-top-content">
                     <div className="search-bar">
