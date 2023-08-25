@@ -73,7 +73,7 @@ const SmartProvider = ({ children }) => {
 
     }, [cart])
 
-    const [modalAdd, setModalAdd] = useState(false)
+    const [modalAdd, setModalAdd] = useState(true)
     const showModal = () => {
         setModalAdd(true)
         setTimeout(() => {
