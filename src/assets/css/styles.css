@@ -425,6 +425,7 @@ footer .bottom-footer {
   min-height: 80vh;
   margin: 5rem 0;
   display: flex;
+  gap: 2rem;
 }
 .individual-product-card .individual-product-image {
   width: 50%;
@@ -434,8 +435,8 @@ footer .bottom-footer {
   align-items: center;
 }
 .individual-product-card .individual-product-image img {
-  width: 600px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 .individual-product-card .individual-product-description {
