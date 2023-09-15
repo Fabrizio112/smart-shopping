@@ -1,9 +1,10 @@
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import imagenIcono from "../../assets/img/smart-shopping.png"
+import imagenIcono from "../../assets/img/smart-shopping.png";
 import { faBars, faCartShopping, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 import { NavLink } from "react-router-dom";
-import { useContext, useRef, useState } from "react";
+import { useContext, useState } from "react";
 import SmartContext from "../../context/SmartContext";
 function NavBar() {
     const { resetFilterCategory, changeCategory, cart } = useContext(SmartContext)
@@ -36,8 +37,8 @@ function NavBar() {
                     </div>
 
                     <div className="cart-star">
-                        <NavLink to="/favorite"><FontAwesomeIcon className="icon" size="2x" icon={faStar} /></NavLink>
-                        <NavLink to="/cart">
+                        <NavLink to="/favorite" role="favorite" ><FontAwesomeIcon className="icon" size="2x" icon={faStar} /></NavLink>
+                        <NavLink to="/cart" role="cart">
                             <div className="container-icon-cart">
                                 <span>{cart && cart.length}</span>
                                 <FontAwesomeIcon className="icon" size="2x" icon={faCartShopping} />
