@@ -30,7 +30,7 @@
 
 @media (max-width:768px) {
     nav {
-        min-height: 20vh;
+        min-height: 15vh;
 
         .nav-top {
             flex-direction: column;
@@ -41,6 +41,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                padding: 0.5rem;
 
                 .icon-menu {
                     display: block;
@@ -166,6 +167,8 @@
     }
 
     .product-section {
+        margin-top: 0;
+
         .product-section_container {
             flex-direction: column;
 
@@ -194,6 +197,16 @@
     .modal-add_product {
         p {
             width: 70%;
+        }
+    }
+
+    .favorite {
+        .favorite-products {
+            width: 100%;
+
+            .favorite-products-container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
         }
     }
 }
