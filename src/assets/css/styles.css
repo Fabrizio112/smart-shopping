@@ -466,7 +466,7 @@ footer .bottom-footer {
   font-size: 2rem;
 }
 
-.add-cart, .clean-cart, .finish-buy {
+.add-cart, .contact form button, .clean-cart, .finish-buy {
   width: 100%;
   padding: 1rem;
   border-radius: 10px;
@@ -572,7 +572,7 @@ footer .bottom-footer {
   background-color: red;
 }
 
-.modal-add_product {
+.modal-add_product, .modal-form {
   position: fixed;
   top: 2rem;
   width: 100%;
@@ -580,7 +580,7 @@ footer .bottom-footer {
   justify-content: center;
   align-items: center;
 }
-.modal-add_product p {
+.modal-add_product p, .modal-form p {
   text-align: center;
   width: 30%;
   color: white;
@@ -762,7 +762,7 @@ footer .bottom-footer {
   .product-section .product-section_container .product-section_products {
     width: 100%;
   }
-  .modal-add_product p {
+  .modal-add_product p, .modal-form p {
     width: 70%;
   }
   .favorite .favorite-products {
@@ -770,6 +770,17 @@ footer .bottom-footer {
   }
   .favorite .favorite-products .favorite-products-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .contact h1 {
+    margin-top: 0 !important;
+  }
+  .contact form input,
+  .contact form textarea,
+  .contact form button {
+    width: 90% !important;
+  }
+  .modal-form p {
+    width: 90% !important;
   }
 }
 @media (max-width: 480px) {
@@ -787,6 +798,63 @@ footer .bottom-footer {
     width: 100%;
     object-fit: cover;
   }
+}
+.contact {
+  width: 100%;
+  min-height: 80vh;
+  height: auto;
+  text-align: center;
+  margin: 2rem 0;
+}
+.contact h1 {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+.contact hr {
+  width: 20%;
+  margin: 2rem auto;
+  box-shadow: 1px 1px 10px black;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  min-height: 60vh;
+}
+.contact form input,
+.contact form textarea {
+  width: 70%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.contact form textarea {
+  resize: none;
+  height: 200px;
+}
+.contact form button {
+  width: 30%;
+}
+
+.modal-form {
+  top: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.63);
+}
+.modal-form p {
+  background-color: white;
+  color: black;
+  width: 50%;
+  height: 200px;
+  margin-top: 0;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
