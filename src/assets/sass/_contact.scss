@@ -1,0 +1,66 @@
+.contact {
+    width: 100%;
+    min-height: 80vh;
+    height: auto;
+    text-align: center;
+    margin: 2rem 0;
+
+    h1 {
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+
+    hr {
+        width: 20%;
+        margin: 2rem auto;
+        box-shadow: 1px 1px 10px black;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        min-height: 60vh;
+
+        input,
+        textarea {
+            width: 70%;
+            padding: 0.6rem;
+            font-size: 1rem;
+            border-radius: 10px;
+            border: 1px solid;
+        }
+
+        textarea {
+            resize: none;
+            height: 200px;
+        }
+
+        button {
+            @extend .add-cart;
+            width: 30%;
+        }
+    }
+}
+
+.modal-form {
+    @extend .modal-add_product;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+
+    p {
+        background-color: white;
+        color: black;
+        width: 50%;
+        height: 200px;
+        margin-top: 0;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

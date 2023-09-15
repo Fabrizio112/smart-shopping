@@ -209,6 +209,27 @@
             }
         }
     }
+
+    .contact {
+        h1 {
+            margin-top: 0 !important;
+        }
+
+        form {
+
+            input,
+            textarea,
+            button {
+                width: 90% !important;
+            }
+        }
+    }
+
+    .modal-form {
+        p {
+            width: 90% !important;
+        }
+    }
 }
 
 @media (max-width:480px) {
