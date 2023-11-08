@@ -1,7 +1,7 @@
 # <img style="padding-right:0.5rem" src='https://img.freepik.com/vector-premium/bandera-argentina-bandera-argentina-ilustracion-vectorial_685751-66.jpg' width="50px" >  <span style="font-size:3rem">ESPAÑOL:</span>
 
 ## <i align="center" style="font-size:2rem">💼 SMART SHOPPING (COMERCIO ELECTRONICO)</i>
-En este proyecto se usaron hooks como **useState,useEffect,useContext,useReducer** , tenologias como  **HTML,CSS,JavaScript,React,SASS** y para el manejo de rutas **React Router**
+En este proyecto se usaron hooks como **useState,useEffect,useContext,useReducer** , tenologias como  **HTML,CSS,JavaScript,React,SASS** y para el manejo de rutas **React Router**.
 
  _Este proyecto fue construido con el proposito de practicar React_
 
@@ -29,7 +29,7 @@ Principalmente decir que a traves de un contexto manejo los diferentes estados q
 
 A traves de un Reducer manejo el estado del carrito. Las diferentes acciones del carrito incluyen : Añadir producto al carrito , eliminar producto del carrito y limpiar el carrito.
 
-Añadi persistencia de datos a traves del local storage tanto para los productos que posee el usuario en el carrito y en favoritos
+Añadi persistencia de datos a traves del local storage tanto para los productos que posee el usuario en el carrito y en favoritos.
 
 La aplicacion posee diferentes paginas:
 - La principal llamada HOME
